@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <section id="app">
   
-  </div>
+  </section>
 </template>
 
 <script>
