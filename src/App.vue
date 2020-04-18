@@ -20,5 +20,22 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #212121;
+  color: #FFF;
+}
 </style>
