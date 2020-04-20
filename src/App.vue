@@ -8,7 +8,14 @@
 
 
 export default {
-  name: 'App'
+  name: 'App',
+  state () {
+    return {
+      current : {
+        title: 'SONG TITLE'
+      }
+    }
+  }
 }
 </script>
 
