@@ -5,7 +5,7 @@
     </header>
     <main> 
       <section class="player">
-        <h2 class="song-title">Test</h2>
+        <h2 class="song-title"> {{ current.title }} </h2>
       </section>
     </main>
   </section>
@@ -13,10 +13,9 @@
 
 <script>
 
-
 export default {
   name: 'App',
-  state () {
+  data () {
     return {
       current : {
         title: 'SONG TITLE'
