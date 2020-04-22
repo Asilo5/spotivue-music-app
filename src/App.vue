@@ -5,7 +5,13 @@
     </header>
     <main> 
       <section class="player">
-        <h2 class="song-title">Test</h2>
+        <h2 class="song-title"> {{ current.title }} - <span> {{ current.artist }} </span></h2>
+      </section>
+      <section class="controls">
+        <button class="prev">Prev</button>
+        <button class="play" v-if="!isPlaying" @click="play">Play</button>
+        <!-- <button class="pause" v-else @click="pause"> Pause </button> -->
+        <button class="next">Next</button>
       </section>
     </main>
   </section>
@@ -13,14 +19,13 @@
 
 <script>
 
-
 export default {
   name: 'App',
-  state () {
+  data () {
     return {
-      current : {
-        title: 'SONG TITLE'
-      },
+      current : {},
+      index : 0,
+      isPlaying: false,
       songs : [
         {
           title: 'Believe',
@@ -42,8 +47,30 @@ export default {
           artist: 'RYYZN',
           src: require('./assets/Passionate Affair (Instrumental) - RYYZN (Music promoted by Audio Library).mp3')
         }
-      ]
+      ],
+      player: new Audio()
     }
+  },
+  methods: {
+    play (song) {
+      if(typeof song.src != undefined) {
+        this.current = song;
+
+        this.player.src = this.current.src;
+      }
+
+      this.player.play();
+      this.isPlaying = true;
+    },
+
+    pause () {
+      this.player.pause();
+      this.isPlaying = false;
+    }
+  },
+  created () {
+    this.current = this.songs[this.index];
+    this.player.src = this.current.src;
   }
 }
 </script>
