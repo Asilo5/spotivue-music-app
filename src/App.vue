@@ -5,7 +5,7 @@
     </header>
     <main> 
       <section class="player">
-        <h2 class="song-title"> {{ current.title }} </h2>
+        <h2 class="song-title"> {{ current.title }} - <span> {{ current.artist }} </span></h2>
       </section>
     </main>
   </section>
@@ -17,9 +17,8 @@ export default {
   name: 'App',
   data () {
     return {
-      current : {
-        title: 'SONG TITLE'
-      },
+      current : {},
+      index : 0,
       songs : [
         {
           title: 'Believe',
@@ -43,6 +42,9 @@ export default {
         }
       ]
     }
+  },
+  created () {
+    this.current = this.songs[this.index];
   }
 }
 </script>
