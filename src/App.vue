@@ -15,7 +15,36 @@
 
 
 export default {
-  name: 'App'
+  name: 'App',
+  state () {
+    return {
+      current : {
+        title: 'SONG TITLE'
+      },
+      songs : [
+        {
+          title: 'Believe',
+          artist: 'Roa',
+          src: require('./assets/Believe - Roa (Music promoted by Audio Library).mp3')
+        },
+         {
+          title: 'LiQWYD & Le Gang',
+          artist: 'Things',
+          src: require('./assets/LiQWYD & Le Gang - Things (Free download).mp3')
+        },
+         {
+          title: 'Mango',
+          artist: 'Smith The Misters',
+          src: require('./assets/Mango by Smith The Misters (Music promoted by Audio Library)_1.mp3')
+        },
+         {
+          title: 'Passionate Affair',
+          artist: 'RYYZN',
+          src: require('./assets/Passionate Affair (Instrumental) - RYYZN (Music promoted by Audio Library).mp3')
+        }
+      ]
+    }
+  }
 }
 </script>
 
