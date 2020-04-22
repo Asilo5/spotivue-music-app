@@ -10,7 +10,7 @@
       <section class="controls">
         <button class="prev">Prev</button>
         <button class="play" v-if="!isPlaying" @click="play">Play</button>
-        <!-- <button class="pause" v-else @click="pause"> Pause </button> -->
+        <button class="pause" v-else @click="pause"> Pause </button>
         <button class="next">Next</button>
       </section>
     </main>
@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     play (song) {
-      if(typeof song.src != undefined) {
+      if(typeof song.src != "undefined") {
         this.current = song;
 
         this.player.src = this.current.src;
