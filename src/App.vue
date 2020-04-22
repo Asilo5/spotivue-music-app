@@ -13,6 +13,15 @@
         <button class="pause" v-else @click="pause"> Pause </button>
         <button class="next">Next</button>
       </section>
+      <section class="playlist">
+        <h3>The Playlist</h3>
+        <button v-for="song in songs" 
+                :key="song.src" 
+                @click="play(song)"
+                :class="(song.src == current.src) ? 'song playing' : 'song' ">
+          {{ song.title }}
+        </button>
+      </section>
     </main>
   </section>
 </template>
