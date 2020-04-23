@@ -205,5 +205,9 @@ h3 {
   background-color: darkolivegreen;
 }
 
+.songs-list .song.playing {
+  background-color: darkolivegreen;
+}
+
 
 </style>
