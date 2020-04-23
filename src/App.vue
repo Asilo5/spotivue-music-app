@@ -111,30 +111,32 @@ export default {
 
 body {
   font-family: sans-serif;
+  background-color: goldenrod;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
-  background-color: #212121;
-  color: #FFF;
+  padding: 30px;
+  font-size: 4em;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
+  margin: 20px;
+  background-color: darkkhaki;
+  border-radius: 50%;
+  width: 45%;
+  height: 35em;
+  margin: auto;
 }
 
 .song-title {
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
-  padding: 10px;
+  margin-top: 20px;
+  padding-top: 80px;
 }
 
 .song-title span {
@@ -148,16 +150,28 @@ main {
   padding: 30px;
 }
 
-.controls > button {
+button {
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  font-size: 20px;
+  border: none;
 }
 
-.controls > button:hover {
-  background-color: cornflowerblue;
+button:hover {
+  opacity: 0.9;
   color: white;
   cursor: pointer;
 } 
+
+.play, .pause {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  margin: 0 15px;
+  background-color: darkolivegreen;
+}
+
+.prev, .next {
+  background-color: darkolivegreen;
+}
 </style>
