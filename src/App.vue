@@ -141,4 +141,23 @@ main {
   font-weight: 400;
   font-style: italic;
 }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.controls > button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.controls > button:hover {
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+} 
 </style>
