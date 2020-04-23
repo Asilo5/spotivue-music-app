@@ -121,4 +121,12 @@ header {
   background-color: #212121;
   color: #FFF;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
 </style>
