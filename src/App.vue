@@ -129,4 +129,16 @@ main {
   flex-direction: column;
   padding: 20px;
 }
+
+.song-title {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.song-title span {
+  font-weight: 400;
+  font-style: italic;
+}
 </style>
