@@ -15,12 +15,14 @@
       </section>
       <section class="playlist">
         <h3>The Playlist</h3>
-        <button v-for="song in songs" 
-                :key="song.src" 
-                @click="play(song)"
-                :class="(song.src == current.src) ? 'song playing' : 'song' ">
-          {{ song.title }} - {{ song.artist }}
-        </button>
+        <section class="songs-list">
+          <button v-for="song in songs" 
+                  :key="song.src" 
+                  @click="play(song)"
+                  :class="(song.src == current.src) ? 'song playing' : 'song' ">
+            {{ song.title }} - {{ song.artist }}
+          </button>
+        </section>
       </section>
     </main>
   </section>
@@ -42,8 +44,8 @@ export default {
           src: require('./assets/Believe - Roa (Music promoted by Audio Library).mp3')
         },
          {
-          title: 'LiQWYD & Le Gang',
-          artist: 'Things',
+          title: 'Things',
+          artist: 'LiQWYD & Le Gang',
           src: require('./assets/LiQWYD & Le Gang - Things (Free download).mp3')
         },
          {
@@ -111,14 +113,101 @@ export default {
 
 body {
   font-family: sans-serif;
+  background-color: goldenrod;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
-  background-color: #212121;
-  color: #FFF;
+  padding: 20px;
+  font-size: 4em;
 }
+
+main {
+  margin: 20px;
+  background-color: darkkhaki;
+  border-radius: 50%;
+  width: 50%;
+  height: 37em;
+  margin: auto;
+}
+
+.song-title {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-top: 80px;
+}
+
+.song-title span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+} 
+
+.play, .pause {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  margin: 0 15px;
+  background-color: darkolivegreen;
+}
+
+.prev, .next {
+  background-color: darkolivegreen;
+}
+
+.playlist {
+  text-align: center;
+  padding: 10px;
+}
+
+.songs-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 13em;
+  overflow: scroll;
+}
+
+h3 {
+  padding: 5px;
+}
+
+.songs-list button {
+  width: 50%;
+  margin: 5px auto;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.songs-list button:hover {
+  background-color: darkolivegreen;
+}
+
+.songs-list .song.playing {
+  background-color: darkolivegreen;
+}
+
+
 </style>
