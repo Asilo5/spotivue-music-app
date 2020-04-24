@@ -9,7 +9,7 @@ Clone the repo to your terminal :``` $ git clone https://github.com/Asilo5/spoti
 
 Run ``` $ npm install ``` in your terminal
 
-To start your server run ``` $ npm run serve ```
+To start your web server run ``` $ npm run serve ```
 
 To view app go to ``` http://localhost:8000 ```
 
@@ -20,4 +20,4 @@ Spotivue was built using:
   - HTML
   - CSS
   
--[image of Spotivue]()
+![image of Spotivue]()
