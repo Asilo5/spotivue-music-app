@@ -11,7 +11,7 @@ Run ``` $ npm install ``` in your terminal
 
 To start your server run ``` $ npm run serve ```
 
-Make sure that server is running on ``` http://localhost:8000 ```
+To view app go to ``` http://localhost:8000 ```
 
 ## What was used to build Spotivue
 
@@ -19,3 +19,5 @@ Spotivue was built using:
   - Vue
   - HTML
   - CSS
+  
+-[image of Spotivue]()
