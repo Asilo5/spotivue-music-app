@@ -20,4 +20,5 @@ Spotivue was built using:
   - HTML
   - CSS
   
-![image of Spotivue]()
+![image of Spotivue](https://github.com/Asilo5/spotivue-music-app/blob/master/Screenshot%202020-04-27%20at%2010.34.06.png)
+![image of Spotivue](https://github.com/Asilo5/spotivue-music-app/blob/master/Screenshot%202020-04-27%20at%2010.34.30.png)
