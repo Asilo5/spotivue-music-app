@@ -194,19 +194,20 @@ h3 {
   padding: 5px;
 }
 
-.songs-list button {
+.songs-list .song {
   width: 50%;
   margin: 5px auto;
   background-color: transparent;
   font-size: 15px;
 }
 
-.songs-list button:hover {
-  background-color: darkolivegreen;
+.songs-list .song:hover {
+  color: darkolivegreen;
 }
 
 .songs-list .song.playing {
   background-color: darkolivegreen;
+  color: white;
 }
 
 
